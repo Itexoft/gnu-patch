@@ -1,0 +1,42 @@
+{
+  "name": "gnu-patch",
+  "version": "2.6.0",
+  "description": "Npm wrapper that ships pre-extracted patch binaries and exposes them via the package bin entry (`patch`).",
+  "license": "MIT",
+  "bin": {
+    "patch": "index.js"
+  },
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "test": "node -e \"console.log('gnu-patch install ok')\""
+  },
+  "files": [
+    "bin",
+    "scripts",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "patch",
+    "gnu-patch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itexoft/gnu-patch.git"
+  },
+  "homepage": "https://github.com/Itexoft/gnu-patch#readme",
+  "bugs": {
+    "url": "https://github.com/Itexoft/gnu-patch/issues"
+  },
+  "author": "Denis Kudelin",
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "os": [
+    "win32"
+  ]
+}
